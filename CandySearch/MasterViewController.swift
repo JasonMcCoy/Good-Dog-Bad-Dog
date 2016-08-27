@@ -26,8 +26,8 @@ class MasterViewController: UITableViewController {
   
   // MARK: - Properties
   var detailViewController: DetailViewController? = nil
-  var candies = [DogFood]()
-  var filteredCandies = [DogFood]()
+  var foodz = [DogFood]()
+  var filteredFoodz = [DogFood]()
   let searchController = UISearchController(searchResultsController: nil)
   
   // MARK: - View Setup
@@ -45,7 +45,7 @@ class MasterViewController: UITableViewController {
     tableView.tableHeaderView = searchController.searchBar
     
     // Manage all the different objects for your users to search.
-    candies = [
+    foodz = [
         // Can cause intoxication, seizures, low blood sugar, arrhythmias,coma, and death.
         DogFood(category:"Bad for Dogs", name:"Alcoholic beverages"),
         // The leaves, seeds, fruit, and bark contain persin, which can cause vomiting and diarrhea.
@@ -210,18 +210,18 @@ class MasterViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     if searchController.isActive && searchController.searchBar.text != "" {
-      return filteredCandies.count
+      return filteredFoodz.count
     }
-    return candies.count
+    return foodz.count
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     let DogFood: DogFood
     if searchController.isActive && searchController.searchBar.text != "" {
-      DogFood = filteredCandies[(indexPath as NSIndexPath).row]
+      DogFood = filteredFoodz[(indexPath as NSIndexPath).row]
     } else {
-      DogFood = candies[(indexPath as NSIndexPath).row]
+      DogFood = foodz[(indexPath as NSIndexPath).row]
     }
     cell.textLabel!.text = DogFood.name
     cell.detailTextLabel!.text = DogFood.category
@@ -229,7 +229,7 @@ class MasterViewController: UITableViewController {
   }
   
   func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-    filteredCandies = candies.filter({( DogFood : DogFood) -> Bool in
+    filteredFoodz = foodz.filter({( DogFood : DogFood) -> Bool in
       let categoryMatch = (scope == "All") || (DogFood.category == scope)
       return categoryMatch && DogFood.name.lowercased().contains(searchText.lowercased())
     })
@@ -242,9 +242,9 @@ class MasterViewController: UITableViewController {
       if let indexPath = tableView.indexPathForSelectedRow {
         let DogFood: DogFood
         if searchController.isActive && searchController.searchBar.text != "" {
-          DogFood = filteredCandies[(indexPath as NSIndexPath).row]
+          DogFood = filteredFoodz[(indexPath as NSIndexPath).row]
         } else {
-          DogFood = candies[(indexPath as NSIndexPath).row]
+          DogFood = foodz[(indexPath as NSIndexPath).row]
         }
         let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
         controller.detailCandy = DogFood
