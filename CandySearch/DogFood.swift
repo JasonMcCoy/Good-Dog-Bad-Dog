@@ -22,7 +22,7 @@
 
 import Foundation
 
-struct Candy {
+struct DogFood {
   let category : String
   let name : String
 }

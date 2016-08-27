@@ -27,7 +27,7 @@ class DetailViewController: UIViewController {
   @IBOutlet weak var detailDescriptionLabel: UILabel!
   @IBOutlet weak var candyImageView: UIImageView!
   
-  var detailCandy: Candy? {
+  var detailCandy: DogFood? {
     didSet {
       configureView()
     }
