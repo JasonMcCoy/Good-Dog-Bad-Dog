@@ -26,6 +26,7 @@ class DetailViewController: UIViewController {
   
   @IBOutlet weak var detailDescriptionLabel: UILabel!
   @IBOutlet weak var DogFoodImageView: UIImageView!
+  @IBOutlet weak var descriptionLabel: UILabel!
   
   var detailCandy: DogFood? {
     didSet {
@@ -35,9 +36,10 @@ class DetailViewController: UIViewController {
   
   func configureView() {
     if let detailCandy = detailCandy {
-      if let detailDescriptionLabel = detailDescriptionLabel, let DogFoodImageView = DogFoodImageView {
+      if let detailDescriptionLabel = detailDescriptionLabel, let DogFoodImageView = DogFoodImageView, let descriptionLabel = descriptionLabel {
         detailDescriptionLabel.text = detailCandy.name
         DogFoodImageView.image = UIImage(named: detailCandy.name)
+        descriptionLabel.text = detailCandy.description
         title = detailCandy.category
       }
     }

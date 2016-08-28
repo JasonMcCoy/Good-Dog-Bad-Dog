@@ -23,6 +23,7 @@
 import Foundation
 
 struct DogFood {
-  let category : String
-  let name : String
+  let category: String
+  let name: String
+  let description: String
 }
