@@ -2,6 +2,11 @@
 # By Jason McCoy
 
 
+DISCLAIMER:
+This app is intended to be used by the public for viewing and retrieving information only. In providing information on this app, I have attempted to be as accurate as possible. However, I make no claims, guarantees or promises about the accuracy, currency, or completeness of the information provided and are not responsible for any errors or omissions, or for results obtained from the use of the information. Every possible effort is made to keep the content of this app accurate and current, but that may not always be the case. I will make an effort to correct errors brought to my attention. Distribution of the information does not constitute any warranty. The user assumes the risk of verifying any materials used or relied on. I, Jason McCoy, has made every effort to ensure that the information posted on this app are up-to-date and accurate. While I try to keep the information on this app updated timely and accurate, I make no expressed or implied guarantees. Further, since I cannot guarantee protection from potential alteration or tampering of the materials on this app or servers by outside parties, the information provided does not constitute official versions, and is not intended, nor can they be relied upon, to create any rights enforceable by any party in litigation with the State of California.
+
+
+
 Here is what my  xcode setup looks like:
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/08/Screen-Shot-2016-08-28-at-10.08.24-AM.png)
 
