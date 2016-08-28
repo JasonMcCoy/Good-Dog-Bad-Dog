@@ -229,10 +229,11 @@ class MasterViewController: UITableViewController {
   }
   
   func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-    filteredFoodz = foodz.filter({( DogFood : DogFood) -> Bool in
+    filteredFoodz = foodz.filter {
+        (DogFood: DogFood) -> Bool in
       let categoryMatch = (scope == "All") || (DogFood.category == scope)
       return categoryMatch && DogFood.name.lowercased().contains(searchText.lowercased())
-    })
+    }
     tableView.reloadData()
   }
   
