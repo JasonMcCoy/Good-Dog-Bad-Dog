@@ -34,7 +34,11 @@ Here is what my DogFood class looks like:
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/08/Screen-Shot-2016-08-28-at-10.09.22-AM.png)
 
 
+
 Credit to:
+
 Doctor Stephanie Flansburg-Cruz
+
 http://www.peteducation.com/
+
 https://pixabay.com/
