@@ -8,8 +8,10 @@ Here is what my  xcode setup looks like:
 
 Here is what the app looks like overall:
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/08/Screen-Shot-2016-08-28-at-10.13.03-AM.png)
+
 and after clicking the chocolate, you'll see this:
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/08/Screen-Shot-2016-08-28-at-10.13.10-AM.png)
+
 you can also search for food as well!
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/08/Screen-Shot-2016-08-28-at-10.16.04-AM.png)
 
