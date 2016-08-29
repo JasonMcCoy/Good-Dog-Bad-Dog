@@ -1,4 +1,4 @@
-# Good-Dog-Bad-Dog - Upon finding the food, users are able to click on their selection and read why the food is bad for the dog and what could happen.
+# Good Dog Bad Dog - Upon finding the food, users are able to click on their selection and read why the food is bad for the dog and what could happen.
 # By Jason McCoy
 
 
